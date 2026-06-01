@@ -1,0 +1,29 @@
+baseURL = "https://cryptonomadshub.com/"
+languageCode = "en-us"
+title = "Crypto Nomads Hub"
+theme = "PaperMod"
+
+[params]
+  description = "Crypto guides, tools, and tips for digital nomads"
+  author = "Crypto Nomads Hub"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "Disclosure"
+    url = "/disclosure/"
+    weight = 4
