@@ -1,0 +1,383 @@
+/* ============================================
+   Crypto Nomads Hub — Custom Theme
+   Deep Navy + Teal + Gold
+   ============================================ */
+
+/* --- Core Color Variables --- */
+:root {
+  --bg-primary: #1e3a5f;
+  --bg-secondary: #1a3352;
+  --bg-card: #264a78;
+  --bg-hover: #2a4f8a;
+  --accent-teal: #00d4aa;
+  --accent-gold: #f0a500;
+  --accent-teal-dim: rgba(0, 212, 170, 0.15);
+  --accent-gold-dim: rgba(240, 165, 0, 0.15);
+  --text-primary: #f0f4f8;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: rgba(0, 212, 170, 0.15);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Base & Body --- */
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* --- Header & Nav --- */
+header {
+  background-color: rgba(10, 15, 30, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+}
+
+.nav {
+  background: transparent !important;
+}
+
+/* Site title */
+.logo a,
+.logo span,
+#site-header .logo {
+  color: var(--accent-teal) !important;
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Nav links */
+#menu-main-menu a,
+.menu a,
+nav a {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  transition: color 0.2s !important;
+}
+
+#menu-main-menu a:hover,
+.menu a:hover,
+nav a:hover {
+  color: var(--accent-teal) !important;
+}
+
+/* --- Profile / Homepage --- */
+.profile {
+  background: transparent !important;
+  padding: 4rem 1rem !important;
+  text-align: center !important;
+}
+
+.profile img,
+.profile_inner img {
+  border: 3px solid var(--accent-teal) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 30px rgba(0, 212, 170, 0.3) !important;
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: cover !important;
+}
+
+.profile h1,
+.profile_inner h1 {
+  color: var(--text-primary) !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin: 1rem 0 0.5rem !important;
+}
+
+.profile .bio,
+.profile_inner .bio,
+.profile p {
+  color: var(--text-secondary) !important;
+  font-size: 1rem !important;
+  max-width: 480px !important;
+  margin: 0 auto 1.5rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Social icons */
+.social-icons a,
+.profile .social-icons a {
+  color: var(--text-muted) !important;
+  transition: color 0.2s, transform 0.2s !important;
+  display: inline-block !important;
+}
+
+.social-icons a:hover {
+  color: var(--accent-teal) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* CTA Buttons on homepage */
+.buttons a,
+.profile .buttons a {
+  background: #00d4aa !important;
+  color: #0f1629 !important;
+  font-weight: 600 !important;
+  border-radius: 6px !important;
+  padding: 0.6rem 1.4rem !important;
+  font-size: 0.9rem !important;
+  transition: all 0.2s !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+
+.buttons a:hover {
+  background: #00b892 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 16px rgba(0, 212, 170, 0.4) !important;
+}
+
+.buttons a:last-child {
+  background: transparent !important;
+  border: 1px solid var(--accent-gold) !important;
+  color: var(--accent-gold) !important;
+}
+
+.buttons a:last-child:hover {
+  background: var(--accent-gold-dim) !important;
+}
+
+/* --- Article Cards --- */
+.post-entry,
+article.post-entry {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.25rem !important;
+  transition: all 0.2s !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.post-entry:hover {
+  border-color: var(--accent-teal) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 32px rgba(0, 212, 170, 0.15) !important;
+}
+
+.post-entry h2,
+.entry-header h2 {
+  color: var(--text-primary) !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.post-entry:hover h2,
+.post-entry:hover .entry-header h2 {
+  color: var(--accent-teal) !important;
+}
+
+.post-entry .entry-content p,
+.entry-content {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+
+.post-meta,
+.entry-footer {
+  color: var(--text-muted) !important;
+  font-size: 0.8rem !important;
+}
+
+/* --- Single Article Page --- */
+.post-header h1 {
+  color: var(--text-primary) !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+.post-content {
+  color: var(--text-secondary) !important;
+  line-height: 1.8 !important;
+  font-size: 1rem !important;
+}
+
+.post-content h2 {
+  color: var(--accent-teal) !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  margin-top: 2rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.post-content h3 {
+  color: var(--accent-gold) !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.5rem !important;
+}
+
+.post-content a {
+  color: var(--accent-teal) !important;
+  text-decoration: underline !important;
+  text-decoration-color: rgba(0, 212, 170, 0.3) !important;
+}
+
+.post-content a:hover {
+  text-decoration-color: var(--accent-teal) !important;
+}
+
+/* Blockquotes */
+.post-content blockquote {
+  border-left: 3px solid var(--accent-gold) !important;
+  background: var(--accent-gold-dim) !important;
+  padding: 1rem 1.5rem !important;
+  border-radius: 0 8px 8px 0 !important;
+  margin: 1.5rem 0 !important;
+  color: var(--text-primary) !important;
+}
+
+/* Tables */
+.post-content table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 1.5rem 0 !important;
+  font-size: 0.9rem !important;
+}
+
+.post-content th {
+  background: var(--accent-teal-dim) !important;
+  color: var(--accent-teal) !important;
+  padding: 0.75rem 1rem !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.post-content td {
+  padding: 0.75rem 1rem !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}
+
+.post-content tr:hover td {
+  background: var(--bg-hover) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Code blocks */
+.post-content code {
+  background: var(--bg-secondary) !important;
+  color: var(--accent-teal) !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
+}
+
+.post-content pre {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 1.25rem !important;
+  overflow-x: auto !important;
+}
+
+/* --- Tags --- */
+.post-tags a,
+.terms-tags a {
+  background: var(--accent-teal-dim) !important;
+  color: var(--accent-teal) !important;
+  border: 1px solid rgba(0, 212, 170, 0.3) !important;
+  border-radius: 4px !important;
+  padding: 0.2rem 0.6rem !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s !important;
+}
+
+.post-tags a:hover {
+  background: var(--accent-teal) !important;
+  color: #0a0f1e !important;
+}
+
+/* --- Search --- */
+#searchbox input {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  border-radius: 8px !important;
+  padding: 0.6rem 1rem !important;
+}
+
+#searchbox input:focus {
+  border-color: var(--accent-teal) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.15) !important;
+}
+
+/* --- Footer --- */
+footer {
+  background: #162d4f !important;
+  border-top: 1px solid rgba(0, 212, 170, 0.3) !important;
+  color: var(--text-muted) !important;
+  font-size: 0.85rem !important;
+}
+
+footer a {
+  color: var(--text-muted) !important;
+}
+
+footer a:hover {
+  color: var(--accent-teal) !important;
+}
+
+/* --- Breadcrumbs --- */
+.breadcrumbs {
+  color: var(--text-muted) !important;
+  font-size: 0.85rem !important;
+}
+
+.breadcrumbs a {
+  color: var(--accent-teal) !important;
+}
+
+/* --- Reading Progress / Scroll --- */
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-teal) !important;
+  border-radius: 3px !important;
+}
+
+/* --- Dark mode toggle --- */
+#theme-toggle {
+  color: var(--text-muted) !important;
+}
+
+#theme-toggle:hover {
+  color: var(--accent-gold) !important;
+}
+
+/* --- Teal glow on featured posts --- */
+.post-entry:first-of-type {
+  border-color: rgba(0, 212, 170, 0.4) !important;
+  background: linear-gradient(135deg, #111827 0%, #0d1f2d 100%) !important;
+}
+
+/* --- Mobile responsive --- */
+@media (max-width: 768px) {
+  .profile h1 {
+    font-size: 1.5rem !important;
+  }
+  .post-header h1 {
+    font-size: 1.5rem !important;
+  }
+}

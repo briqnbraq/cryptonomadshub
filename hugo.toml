@@ -3,12 +3,46 @@ languageCode = "en-us"
 title = "Crypto Nomads Hub"
 theme = "PaperMod"
 
+[pagination]
+  pagerSize = 10
+
 [params]
   description = "Crypto guides, tools, and tips for digital nomads"
   author = "Crypto Nomads Hub"
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+  ShowToc = true
+  TocOpen = false
+  defaultTheme = "dark"
+  disableThemeToggle = false
+
+  [params.profileMode]
+    enabled = true
+    title = "Crypto Nomads Hub"
+    subtitle = "The crypto-friendly home for digital nomads. Guides, tools, and honest reviews to help you earn, save, and spend crypto — wherever you are in the world."
+    imageUrl = "images/avatar.png"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "Crypto Nomads Hub"
+
+    [[params.profileMode.buttons]]
+      name = "Read the Blog"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "Start Here"
+      url = "/posts/best-crypto-exchanges-for-digital-nomads/"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/cryptonomadshub"
+
+[[params.socialIcons]]
+  name = "rss"
+  url = "/index.xml"
 
 [menu]
   [[menu.main]]
